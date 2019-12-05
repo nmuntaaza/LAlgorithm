@@ -1,0 +1,14 @@
+{
+  "name": "LAlgorithm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nmuntaaza/LAlgorithm.git",
+  "author": "Naufal <nmuntaaza.wh@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
