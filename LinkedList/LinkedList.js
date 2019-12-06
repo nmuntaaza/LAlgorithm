@@ -97,6 +97,16 @@ class LinkedList {
     }
     return this.traversing();
   }
+
+  copy() {
+    let tempHead = this.head;
+    let linkedList = new LinkedList();
+    while (tempHead) {
+      linkedList.addLast(tempHead.data);
+      tempHead = tempHead.next;
+    }
+    return linkedList;
+  }
 }
 
 module.exports = LinkedList;

@@ -40,3 +40,7 @@ test('delete', () => {
   expect(linkedList.delete(111)).toEqual([9.5, 10, 12, 99]);
   expect(linkedList.size).toBe(4);
 })
+
+test('copy', () => {
+  expect(linkedList.copy().traversing()).toEqual(linkedList.traversing());
+})
