@@ -75,7 +75,6 @@ class LinkedList {
       prevNode.next = node;
       this.size++;
     }
-
     return this.traversing();
   }
 

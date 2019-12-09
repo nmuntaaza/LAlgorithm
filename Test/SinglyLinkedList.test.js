@@ -1,4 +1,4 @@
-const LinkedList = require('../LinkedList/LinkedList');
+const LinkedList = require('../LinkedList/SinglyLinkedList');
 
 const linkedList = new LinkedList();
 
