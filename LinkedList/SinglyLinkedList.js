@@ -15,6 +15,7 @@ class LinkedList {
     const node = new Node(data);
     node.next = this.head;
     this.head = node;
+
     this.size++;
     return this.traversing();
   }
@@ -26,19 +27,21 @@ class LinkedList {
       datas.push(tempHead.data);
       tempHead = tempHead.next;
     }
+
     return datas;
   }
 
   addLast(data) {
     let tempHead = this.head;
-    if (tempHead == null) {
-      this.head = new Node(data);
-    } else {
+    if (tempHead) {
       while (tempHead.next) {
         tempHead = tempHead.next;
       }
       tempHead.next = new Node(data);
+    } else {
+      this.head = new Node(data);
     }
+
     this.size++;
     return this.traversing();
   }
@@ -48,12 +51,13 @@ class LinkedList {
     while (tempHead && tempHead.data != prev) {
       tempHead = tempHead.next
     }
-    if (tempHead != null) {
+    if (tempHead) {
       const node = new Node(data);
       node.next = tempHead.next;
       tempHead.next = node;
       this.size++;
     }
+
     return this.traversing();
   }
 
@@ -75,6 +79,7 @@ class LinkedList {
       prevNode.next = node;
       this.size++;
     }
+    
     return this.traversing();
   }
 

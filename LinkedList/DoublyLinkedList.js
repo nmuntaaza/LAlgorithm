@@ -103,12 +103,14 @@ class DoublyLinkedList {
         } else {
           this.head = null;
         }
+        this.size--;
       } else {
         currentNode.prev.next = currentNode.next;
         if (currentNode.next) {
           currentNode.next.prev = currentNode.prev;
         }
         currentNode = null;
+        this.size--;
       }
     }
     return this.traversing();
